@@ -16,6 +16,18 @@ function preload() {
     song = loadSound('assets/19thFloor-BobbyRichards.mp3');
 }
 
+// Existing code unchanged.
+window.onload = function() {
+  var context = new AudioContext();
+}
+
+// One-liner to resume playback when user interacted with the page.
+document.querySelector('button').addEventListener('click', function() {
+  context.resume().then(() => {
+    console.log('Playback resumed successfully');
+  });
+});
+
 function setup() {
   createCanvas(windowWidth,windowHeight);
 
