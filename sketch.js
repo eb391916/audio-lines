@@ -13,7 +13,7 @@ function toggleSong() {
 }
 
 function preload() {
-    song = loadSound('19thFloor-BobbyRichards.mp3');
+    song = loadSound('assets/19thFloor-BobbyRichards.mp3');
 }
 
 function setup() {
